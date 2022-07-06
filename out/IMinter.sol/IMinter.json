@@ -1,0 +1,252 @@
+{
+  "abi": [
+    {
+      "inputs": [],
+      "name": "getLeafNodes",
+      "outputs": [
+        {
+          "internalType": "bytes32[]",
+          "name": "nodes",
+          "type": "bytes32[]"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getPermissions",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "address",
+              "name": "module",
+              "type": "address"
+            },
+            {
+              "internalType": "address",
+              "name": "target",
+              "type": "address"
+            },
+            {
+              "internalType": "bytes4",
+              "name": "selector",
+              "type": "bytes4"
+            }
+          ],
+          "internalType": "struct Permission[]",
+          "name": "permissions",
+          "type": "tuple[]"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "supply",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "getLeafNodes()": "cbbb4ac5",
+    "getPermissions()": "c3a07df6",
+    "supply()": "047fc9aa"
+  },
+  "ast": {
+    "absolutePath": "src/interfaces/IMinter.sol",
+    "id": 17722,
+    "exportedSymbols": {
+      "IMinter": [
+        17721
+      ],
+      "IModule": [
+        17740
+      ],
+      "Permission": [
+        18154
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "32:248:29",
+    "nodes": [
+      {
+        "id": 17708,
+        "nodeType": "PragmaDirective",
+        "src": "32:23:29",
+        "literals": [
+          "solidity",
+          "0.8",
+          ".13"
+        ]
+      },
+      {
+        "id": 17710,
+        "nodeType": "ImportDirective",
+        "src": "57:38:29",
+        "absolutePath": "src/interfaces/IModule.sol",
+        "file": "./IModule.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 17722,
+        "sourceUnit": 17741,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 17709,
+              "name": "IModule",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 17740,
+              "src": "65:7:29",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 17712,
+        "nodeType": "ImportDirective",
+        "src": "96:48:29",
+        "absolutePath": "src/interfaces/IVaultRegistry.sol",
+        "file": "./IVaultRegistry.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 17722,
+        "sourceUnit": 18317,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 17711,
+              "name": "Permission",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 18154,
+              "src": "104:10:29",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 17721,
+        "nodeType": "ContractDefinition",
+        "src": "192:87:29",
+        "nodes": [
+          {
+            "id": 17720,
+            "nodeType": "FunctionDefinition",
+            "src": "227:50:29",
+            "functionSelector": "047fc9aa",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "supply",
+            "nameLocation": "236:6:29",
+            "parameters": {
+              "id": 17716,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "242:2:29"
+            },
+            "returnParameters": {
+              "id": 17719,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 17718,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 17720,
+                  "src": "268:7:29",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 17717,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "268:7:29",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "267:9:29"
+            },
+            "scope": 17721,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [
+          {
+            "baseName": {
+              "id": 17714,
+              "name": "IModule",
+              "nodeType": "IdentifierPath",
+              "referencedDeclaration": 17740,
+              "src": "213:7:29"
+            },
+            "id": 17715,
+            "nodeType": "InheritanceSpecifier",
+            "src": "213:7:29"
+          }
+        ],
+        "canonicalName": "IMinter",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": {
+          "id": 17713,
+          "nodeType": "StructuredDocumentation",
+          "src": "146:46:29",
+          "text": "@dev Interface for Minter module contract"
+        },
+        "fullyImplemented": false,
+        "linearizedBaseContracts": [
+          17721,
+          17740
+        ],
+        "name": "IMinter",
+        "nameLocation": "202:7:29",
+        "scope": 17722,
+        "usedErrors": []
+      }
+    ],
+    "license": "MIT"
+  },
+  "id": 29
+}

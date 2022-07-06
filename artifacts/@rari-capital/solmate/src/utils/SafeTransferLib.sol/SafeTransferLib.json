@@ -1,0 +1,36 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "SafeTransferLib",
+  "sourceName": "@rari-capital/solmate/src/utils/SafeTransferLib.sol",
+  "abi": [
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "bool",
+          "name": "one",
+          "type": "bool"
+        },
+        {
+          "indexed": false,
+          "internalType": "bool",
+          "name": "two",
+          "type": "bool"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "retsize",
+          "type": "uint256"
+        }
+      ],
+      "name": "Debug",
+      "type": "event"
+    }
+  ],
+  "bytecode": "0x60566037600b82828239805160001a607314602a57634e487b7160e01b600052600060045260246000fd5b30600052607381538281f3fe73000000000000000000000000000000000000000030146080604052600080fdfea2646970667358221220960d37e84d9337dc13ff37bebf4c23e3de62c5666f46c8a39441b39ab7d839e464736f6c634300080d0033",
+  "deployedBytecode": "0x73000000000000000000000000000000000000000030146080604052600080fdfea2646970667358221220960d37e84d9337dc13ff37bebf4c23e3de62c5666f46c8a39441b39ab7d839e464736f6c634300080d0033",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

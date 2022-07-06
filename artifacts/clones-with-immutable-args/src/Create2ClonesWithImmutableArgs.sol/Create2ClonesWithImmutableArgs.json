@@ -1,0 +1,16 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "Create2ClonesWithImmutableArgs",
+  "sourceName": "clones-with-immutable-args/src/Create2ClonesWithImmutableArgs.sol",
+  "abi": [
+    {
+      "inputs": [],
+      "name": "CreateFail",
+      "type": "error"
+    }
+  ],
+  "bytecode": "0x60566037600b82828239805160001a607314602a57634e487b7160e01b600052600060045260246000fd5b30600052607381538281f3fe73000000000000000000000000000000000000000030146080604052600080fdfea26469706673582212201b67de56e6e40761b2c39afa863615f2b60cb1d93b1019fe47eeeb8eee97d0e364736f6c634300080d0033",
+  "deployedBytecode": "0x73000000000000000000000000000000000000000030146080604052600080fdfea26469706673582212201b67de56e6e40761b2c39afa863615f2b60cb1d93b1019fe47eeeb8eee97d0e364736f6c634300080d0033",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

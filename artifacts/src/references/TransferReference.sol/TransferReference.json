@@ -1,0 +1,237 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "TransferReference",
+  "sourceName": "src/references/TransferReference.sol",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_token",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "_from",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "_to",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "BadReturnValueFromERC20OnTransfer",
+      "type": "error"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_token",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "_from",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "_to",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256[]",
+          "name": "_identifiers",
+          "type": "uint256[]"
+        },
+        {
+          "internalType": "uint256[]",
+          "name": "_amounts",
+          "type": "uint256[]"
+        }
+      ],
+      "name": "ERC1155BatchTransferGenericFailure",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InvalidERC721TransferAmount",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "MissingItemAmount",
+      "type": "error"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_account",
+          "type": "address"
+        }
+      ],
+      "name": "NoContract",
+      "type": "error"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_token",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "_from",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "_to",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_identifier",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "TokenTransferGenericFailure",
+      "type": "error"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_token",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "_from",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "_to",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256[]",
+          "name": "_ids",
+          "type": "uint256[]"
+        },
+        {
+          "internalType": "uint256[]",
+          "name": "_values",
+          "type": "uint256[]"
+        }
+      ],
+      "name": "ERC1155BatchTransferFrom",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_token",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "_from",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "_to",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_id",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_value",
+          "type": "uint256"
+        }
+      ],
+      "name": "ERC1155TransferFrom",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_token",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "_to",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_value",
+          "type": "uint256"
+        }
+      ],
+      "name": "ERC20Transfer",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_token",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "_from",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "_to",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_tokenId",
+          "type": "uint256"
+        }
+      ],
+      "name": "ERC721TransferFrom",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x608060405234801561001057600080fd5b50610624806100206000396000f3fe608060405234801561001057600080fd5b506004361061004c5760003560e01c806318c4eeed1461005157806368e72e491461006657806376aa79b214610079578063e59fdd361461008c575b600080fd5b61006461005f366004610340565b61009f565b005b61006461007436600461038b565b610135565b61006461008736600461042c565b6101e1565b61006461009a3660046104ce565b610278565b6040517f42842e0e00000000000000000000000000000000000000000000000000000000815273ffffffffffffffffffffffffffffffffffffffff84811660048301528381166024830152604482018390528516906342842e0e90606401600060405180830381600087803b15801561011757600080fd5b505af115801561012b573d6000803e3d6000fd5b5050505050505050565b6040517ff242432a00000000000000000000000000000000000000000000000000000000815273ffffffffffffffffffffffffffffffffffffffff85811660048301528481166024830152604482018490526064820183905260a06084830152600060a483015286169063f242432a9060c401600060405180830381600087803b1580156101c257600080fd5b505af11580156101d6573d6000803e3d6000fd5b505050505050505050565b6040517f2eb2c2d600000000000000000000000000000000000000000000000000000000815273ffffffffffffffffffffffffffffffffffffffff881690632eb2c2d69061023d90899089908990899089908990600401610559565b600060405180830381600087803b15801561025757600080fd5b505af115801561026b573d6000803e3d6000fd5b5050505050505050505050565b6040517fa9059cbb00000000000000000000000000000000000000000000000000000000815273ffffffffffffffffffffffffffffffffffffffff83811660048301526024820183905284169063a9059cbb906044016020604051808303816000875af11580156102ed573d6000803e3d6000fd5b505050506040513d601f19601f8201168201806040525081019061031191906105c5565b50505050565b803573ffffffffffffffffffffffffffffffffffffffff8116811461033b57600080fd5b919050565b6000806000806080858703121561035657600080fd5b61035f85610317565b935061036d60208601610317565b925061037b60408601610317565b9396929550929360600135925050565b600080600080600060a086880312156103a357600080fd5b6103ac86610317565b94506103ba60208701610317565b93506103c860408701610317565b94979396509394606081013594506080013592915050565b60008083601f8401126103f257600080fd5b50813567ffffffffffffffff81111561040a57600080fd5b6020830191508360208260051b850101111561042557600080fd5b9250929050565b600080600080600080600060a0888a03121561044757600080fd5b61045088610317565b965061045e60208901610317565b955061046c60408901610317565b9450606088013567ffffffffffffffff8082111561048957600080fd5b6104958b838c016103e0565b909650945060808a01359150808211156104ae57600080fd5b506104bb8a828b016103e0565b989b979a50959850939692959293505050565b6000806000606084860312156104e357600080fd5b6104ec84610317565b92506104fa60208501610317565b9150604084013590509250925092565b81835260007f07ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff83111561053c57600080fd5b8260051b8083602087013760009401602001938452509192915050565b600073ffffffffffffffffffffffffffffffffffffffff808916835280881660208401525060a0604083015261059360a08301868861050a565b82810360608401526105a681858761050a565b8381036080909401939093525050600081526020019695505050505050565b6000602082840312156105d757600080fd5b815180151581146105e757600080fd5b939250505056fea26469706673582212201c03b2a6894b679caed33a408434b79771563e37fe21c7dfeccd392955ba339a64736f6c634300080d0033",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b506004361061004c5760003560e01c806318c4eeed1461005157806368e72e491461006657806376aa79b214610079578063e59fdd361461008c575b600080fd5b61006461005f366004610340565b61009f565b005b61006461007436600461038b565b610135565b61006461008736600461042c565b6101e1565b61006461009a3660046104ce565b610278565b6040517f42842e0e00000000000000000000000000000000000000000000000000000000815273ffffffffffffffffffffffffffffffffffffffff84811660048301528381166024830152604482018390528516906342842e0e90606401600060405180830381600087803b15801561011757600080fd5b505af115801561012b573d6000803e3d6000fd5b5050505050505050565b6040517ff242432a00000000000000000000000000000000000000000000000000000000815273ffffffffffffffffffffffffffffffffffffffff85811660048301528481166024830152604482018490526064820183905260a06084830152600060a483015286169063f242432a9060c401600060405180830381600087803b1580156101c257600080fd5b505af11580156101d6573d6000803e3d6000fd5b505050505050505050565b6040517f2eb2c2d600000000000000000000000000000000000000000000000000000000815273ffffffffffffffffffffffffffffffffffffffff881690632eb2c2d69061023d90899089908990899089908990600401610559565b600060405180830381600087803b15801561025757600080fd5b505af115801561026b573d6000803e3d6000fd5b5050505050505050505050565b6040517fa9059cbb00000000000000000000000000000000000000000000000000000000815273ffffffffffffffffffffffffffffffffffffffff83811660048301526024820183905284169063a9059cbb906044016020604051808303816000875af11580156102ed573d6000803e3d6000fd5b505050506040513d601f19601f8201168201806040525081019061031191906105c5565b50505050565b803573ffffffffffffffffffffffffffffffffffffffff8116811461033b57600080fd5b919050565b6000806000806080858703121561035657600080fd5b61035f85610317565b935061036d60208601610317565b925061037b60408601610317565b9396929550929360600135925050565b600080600080600060a086880312156103a357600080fd5b6103ac86610317565b94506103ba60208701610317565b93506103c860408701610317565b94979396509394606081013594506080013592915050565b60008083601f8401126103f257600080fd5b50813567ffffffffffffffff81111561040a57600080fd5b6020830191508360208260051b850101111561042557600080fd5b9250929050565b600080600080600080600060a0888a03121561044757600080fd5b61045088610317565b965061045e60208901610317565b955061046c60408901610317565b9450606088013567ffffffffffffffff8082111561048957600080fd5b6104958b838c016103e0565b909650945060808a01359150808211156104ae57600080fd5b506104bb8a828b016103e0565b989b979a50959850939692959293505050565b6000806000606084860312156104e357600080fd5b6104ec84610317565b92506104fa60208501610317565b9150604084013590509250925092565b81835260007f07ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff83111561053c57600080fd5b8260051b8083602087013760009401602001938452509192915050565b600073ffffffffffffffffffffffffffffffffffffffff808916835280881660208401525060a0604083015261059360a08301868861050a565b82810360608401526105a681858761050a565b8381036080909401939093525050600081526020019695505050505050565b6000602082840312156105d757600080fd5b815180151581146105e757600080fd5b939250505056fea26469706673582212201c03b2a6894b679caed33a408434b79771563e37fe21c7dfeccd392955ba339a64736f6c634300080d0033",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}
