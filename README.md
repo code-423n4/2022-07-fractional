@@ -10,7 +10,7 @@
 
 # Contest Scope
 
-This contest is open for one week to give wardens time to understand the protocol properly.  Representatives from Fractional will be available in the Code Arena Discord to answer any questions during the contest period. The focus of the contest is to try and find any logic errors, mint/burn fractions unexpectedly, or ways to remove NFTs from the Fractional Vaults in ways that would be beneficial for an attacker at the expense of vault creators or fraction holders. Wardens should assume that governance variables are set sensibly (unless they can find a way to change the value of a governance variable, and not counting social engineering approaches for this). 
+This contest is open for one week to give wardens time to understand the protocol properly.  Representatives from Fractional will be available in the Code Arena Discord to answer any questions during the contest period. The focus of the contest is to try and find any logic errors, mint/burn fractions unexpectedly, or ways to remove NFTs from the Fractional Vaults in ways that would be beneficial for an attacker at the expense of vault creators or fraction holders. Wardens should assume that governance variables are set sensibly (unless they can find a way to change the value of a governance variable, and not counting social engineering approaches for this).
 
 ## Protocol overview
 
@@ -46,7 +46,7 @@ In general, it is highly recommended for vaults to have a module that enables it
 
 > Protoforms are templates for common vault use-cases
 
-Protoforms aggregate static sets of module permissions to deploy vaults with similar base functionality.  Protoforms are the main entry point for deploying a vault with a certain use-case determined by the modules that are enabled on a vault. 
+Protoforms aggregate static sets of module permissions to deploy vaults with similar base functionality.  Protoforms are the main entry point for deploying a vault with a certain use-case determined by the modules that are enabled on a vault.
 
 ## Targets
 
@@ -103,7 +103,7 @@ Libraries: ClonesWithImmutableArgs, IVaultRegistry
 ```
 Target contract for minting and burning fractional tokens
 
-External Contracts: IVaultRegistry 
+External Contracts: IVaultRegistry
 
 Libraries: ISupply
 ```
@@ -225,30 +225,42 @@ A full set of unit tests are provided in the repo. To run these do the following
 ## Prepare Environment
 
 1. install `node`, refer to [nodejs](https://nodejs.org/en/)
+
 2. install `foundry`, refer to [foundry](https://github.com/foundry-rs/foundry)
 
 ### Setup Environment
 
 > Required **node >12**
 
-1. `npm ci` in root folder - Installs node dependencies
-2. `make deps` - installs gitmodule dependencies
-3. `make users` - Generates user proxies
-4. `make test` - Runs foundry tests
+1. run `make deps` in root directory - Installs gitmodule dependencies
+
+2. create `.env` file in root directory and add the following:
+```
+ALCHEMY_API_KEY=
+DEPLOYER_PRIVATE_KEY=
+ETHERSCAN_API_KEY=
+```
+
+3. run `npm ci` in root directory - Installs node dependencies
+
+4. run `make users` - Generates user proxies
+
+5. run `make test` - Runs foundry tests
 
 ## Glossary
 
-
-| [Blacksmith](https://github.com/pbshgthm/blacksmith)         | Full-fledged contract generator to create User contracts for testing purposes |
-| ------------------------------------------------------------ | ------------------------------------------------------------ |
-| [ClonesWithImmutableArgs](https://github.com/wighawag/clones-with-immutable-args) | Library for creating clone contracts with immutable arguments |
-| [Forge Standard Library](https://github.com/foundry-rs/forge-std) | Leverages `forge`'s cheatcodes to make writing tests easier and faster in Foundry |
-| [Foundry](https://github.com/foundry-rs/foundry)             | Framework for Ethereum application development               |
-| [Hardhat](https://github.com/NomicFoundation/hardhat)        | Development environment for deploying and interacting with smart contracts |
-| [Murky](https://github.com/dmfxyz/murky)                     | Library for generating merkle roots and verifying proofs in Solidity |
-| [Natspec](https://docs.soliditylang.org/en/v0.8.13/natspec-format.html) | A special form of comments to provide rich documentation     |
-| [OpenZeppelin](https://github.com/OpenZeppelin/openzeppelin-contracts) | Library of community-vetted code for secure smart contract development |
-| [PRBProxy](https://github.com/paulrberg/prb-proxy)           | Proxy contract to compose Ethereum transactions on behalf of the owner |
-| [Seaport](https://github.com/ProjectOpenSea/seaport)         | OpenSea's new marketplace protocol                           |
-| [Solmate](https://github.com/Rari-Capital/solmate)           | Building blocks for smart contract development               |
-| [Style Guide](https://github.com/ethereum/solidity/blob/develop/docs/style-guide.rst) | Standard coding conventions for formatting and organizing Solidity code |
+| Name                                                                                                     | Description                                                                              |
+| -------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- |
+| [Blacksmith](https://github.com/pbshgthm/blacksmith)                                                     | Full-fledged contract generator to create User contracts for testing purposes            |
+| [ClonesWithImmutableArgs](https://github.com/wighawag/clones-with-immutable-args)                        | Enables creating clone contracts with immutable arguments                                |
+| [Forge Standard Library](https://github.com/foundry-rs/forge-std)                                        | Leverages forge's cheatcodes to make writing tests easier and faster in Foundry          |
+| [Foundry](https://github.com/foundry-rs/foundry)                                                         | Framework for Ethereum application development                                           |
+| [Hardhat](https://github.com/NomicFoundation/hardhat)                                                    | Development environment for deploying and interacting with smart contracts               |
+| [Multicall (Uniswap v3)](https://github.com/Uniswap/v3-periphery/blob/main/contracts/base/Multicall.sol) | Enables calling multiple methods in a single call to the contract                        |
+| [Murky](https://github.com/dmfxyz/murky)                                                                 | Generates merkle roots and verifies proofs in Solidity                                   |
+| [NatSpec Format](https://docs.soliditylang.org/en/v0.8.13/natspec-format.html)                           | A special form of comments to provide rich documentation                                 |
+| [OpenZeppelin](https://github.com/OpenZeppelin/openzeppelin-contracts)                                   | Library of community-vetted code for secure smart contract development                   |
+| [PRBProxy](https://github.com/paulrberg/prb-proxy)                                                       | Proxy contract to compose Ethereum transactions on behalf of the owner                   |
+| [Seaport](https://github.com/ProjectOpenSea/seaport/blob/main/contracts/lib/TokenTransferrer.sol)        | Library for performing optimized token transfers from OpenSea's new marketplace protocol |
+| [Solidity Style Guide](https://github.com/ethereum/solidity/blob/develop/docs/style-guide.rst)           | Standard coding conventions for writing Solidity code                                    |
+| [Solmate](https://github.com/Rari-Capital/solmate)                                                       | Building blocks for smart contract development                                           |
