@@ -100,52 +100,52 @@ All the contracts in this section are to be reviewed. Any contracts not in this 
 |Total:| 2274 | 4730 |
 
 
-#### BaseVault.sol
+### BaseVault.sol
 *External Contracts*: `IERC20`, `IERC721`, `IERC1155`, `IModule`, `IVaultRegistry`
 
-#### Buyout.sol
+### Buyout.sol
 *External Contracts*: `IERC1155`, `ISupply`, `ITransfer`, `IVault`, `IVaultRegistry`
 
-#### IBaseVault.sol
+### IBaseVault.sol
 *External Contracts*: `IProtoform`
 
-#### IBuyout.sol
+### IBuyout.sol
 *External Contracts*: `IModule`
 
-#### IMinter.sol
+### IMinter.sol
 *External Contracts*: `IModule`
 
-#### FERC1155.sol
+### FERC1155.sol
 *External Contracts*: `IFERC1155`, `INFTReceiver`
 
 *Libraries*: **clones-with-immutable-args/src/Clone.sol**, **@rari-capital/solmate/src/tokens/ERC1155.sol**
 
-#### Migration.sol
+### Migration.sol
 *External Contracts*: `IBuyout`, `IERC20`, `IERC721`, `IERC1155`, `IFERC1155`, `IModule`, `IVaultRegistry`
 
 *Libraries*: **@rari-capital/solmate/src/utils/ReentrancyGuard.sol**
 
-#### Minter.sol
+### Minter.sol
 *External Contracts*: `IVault`
 
-#### SafeSend.sol
+### SafeSend.sol
 *Libraries*: **@rari-capital/solmate/src/tokens/WETH.sol**
 
-#### Supply.sol
+### Supply.sol
 *External Contracts*: `IVaultRegistry`
 
-#### Transfer.sol
+### Transfer.sol
 *External Contracts*: `IERC20`, `IERC721`, `IERC1155`
 
-#### Vault.sol
+### Vault.sol
 *Libraries*: **@openzeppelin/contracts/utils/cryptography/MerkleProof.sol**
 
-#### VaultFactory.sol
+### VaultFactory.sol
 *External Contracts*: `Vault`
 
 *Libraries*: **clones-with-immutable-args/src/Create2ClonesWithImmutableArgs.sol**
 
-#### VaultRegistry.sol
+### VaultRegistry.sol
 *External Contracts*: `FERC1155`, `IVault`, `VaultFactory`
 
 *Libraries*: **clones-with-immutable-args/src/ClonesWithImmutableArgs.sol**
