@@ -58,159 +58,98 @@ Targets are stateless script-like contracts for executing transactions by the Va
 
 All the contracts in this section are to be reviewed. Any contracts not in this list are to be ignored for this contest.
 
-#### FERC1155.sol (265 sloc each)
+|File|nSLOC|Lines|Description
+|:-|:-:|:-:|:-|
+|[src/FERC1155.sol](https://github.com/code-423n4/2022-07-fractional/blob/e2c5a962a94106f9495eb96769d7f60f7d5b14c9/src/FERC1155.sol)|195|398|ERC-1155 implementation for Fractional tokens
+|[src/Vault.sol](https://github.com/code-423n4/2022-07-fractional/blob/e2c5a962a94106f9495eb96769d7f60f7d5b14c9/src/Vault.sol)|80|148|Proxy contract for storing fractionalized assets
+|[src/VaultFactory.sol](https://github.com/code-423n4/2022-07-fractional/blob/e2c5a962a94106f9495eb96769d7f60f7d5b14c9/src/VaultFactory.sol)|50|90|Factory contract for deploying fractional vaults
+|[src/VaultRegistry.sol](https://github.com/code-423n4/2022-07-fractional/blob/e2c5a962a94106f9495eb96769d7f60f7d5b14c9/src/VaultRegistry.sol)|75|178|Registry contract for tracking all fractional vaults and deploying token contracts
+|[src/constants/Memory.sol](https://github.com/code-423n4/2022-07-fractional/blob/e2c5a962a94106f9495eb96769d7f60f7d5b14c9/src/constants/Memory.sol)|14|20|Global list of constants used for assembly optimizations
+|[src/constants/Permit.sol](https://github.com/code-423n4/2022-07-fractional/blob/e2c5a962a94106f9495eb96769d7f60f7d5b14c9/src/constants/Permit.sol)|10|17|Global list of constants used for EIP-712 permit functionality
+|[src/constants/Supply.sol](https://github.com/code-423n4/2022-07-fractional/blob/e2c5a962a94106f9495eb96769d7f60f7d5b14c9/src/constants/Supply.sol)|28|40|List of constants used inside the Supply target contract
+|[src/constants/Transfer.sol](https://github.com/code-423n4/2022-07-fractional/blob/e2c5a962a94106f9495eb96769d7f60f7d5b14c9/src/constants/Transfer.sol)|80|129|List of constants used inside the Transfer target contract
+|[src/interfaces/IBaseVault.sol](https://github.com/code-423n4/2022-07-fractional/blob/e2c5a962a94106f9495eb96769d7f60f7d5b14c9/src/interfaces/IBaseVault.sol)|6|46|Interface for BaseVault protoform contract
+|[src/interfaces/IBuyout.sol](https://github.com/code-423n4/2022-07-fractional/blob/e2c5a962a94106f9495eb96769d7f60f7d5b14c9/src/interfaces/IBuyout.sol)|38|159|Interface for Buyout module contract
+|[src/interfaces/IERC1155.sol](https://github.com/code-423n4/2022-07-fractional/blob/e2c5a962a94106f9495eb96769d7f60f7d5b14c9/src/interfaces/IERC1155.sol)|23|60|Interface for generic ERC-1155 contract
+|[src/interfaces/IERC20.sol](https://github.com/code-423n4/2022-07-fractional/blob/e2c5a962a94106f9495eb96769d7f60f7d5b14c9/src/interfaces/IERC20.sol)|9|48|Interface for generic ERC-20 contract
+|[src/interfaces/IERC721.sol](https://github.com/code-423n4/2022-07-fractional/blob/e2c5a962a94106f9495eb96769d7f60f7d5b14c9/src/interfaces/IERC721.sol)|18|63|Interface for generic ERC-721 contract
+|[src/interfaces/IFERC1155.sol](https://github.com/code-423n4/2022-07-fractional/blob/e2c5a962a94106f9495eb96769d7f60f7d5b14c9/src/interfaces/IFERC1155.sol)|20|135|Interface for FERC1155 token contract
+|[src/interfaces/IMigration.sol](https://github.com/code-423n4/2022-07-fractional/blob/e2c5a962a94106f9495eb96769d7f60f7d5b14c9/src/interfaces/IMigration.sol)|42|168|Interface for Migration module contract
+|[src/interfaces/IMinter.sol](https://github.com/code-423n4/2022-07-fractional/blob/e2c5a962a94106f9495eb96769d7f60f7d5b14c9/src/interfaces/IMinter.sol)|5|10|Interface for Minter contract
+|[src/interfaces/IModule.sol](https://github.com/code-423n4/2022-07-fractional/blob/e2c5a962a94106f9495eb96769d7f60f7d5b14c9/src/interfaces/IModule.sol)|4|14|Interface for generic Module contract
+|[src/interfaces/INFTReceiver.sol](https://github.com/code-423n4/2022-07-fractional/blob/e2c5a962a94106f9495eb96769d7f60f7d5b14c9/src/interfaces/INFTReceiver.sol)|3|28|Interface for NFTReceiver contract
+|[src/interfaces/IProtoform.sol](https://github.com/code-423n4/2022-07-fractional/blob/e2c5a962a94106f9495eb96769d7f60f7d5b14c9/src/interfaces/IProtoform.sol)|4|20|Interface for generic Protoform contract
+|[src/interfaces/ISupply.sol](https://github.com/code-423n4/2022-07-fractional/blob/e2c5a962a94106f9495eb96769d7f60f7d5b14c9/src/interfaces/ISupply.sol)|5|14|Interface for Supply targert contract
+|[src/interfaces/ITransfer.sol](https://github.com/code-423n4/2022-07-fractional/blob/e2c5a962a94106f9495eb96769d7f60f7d5b14c9/src/interfaces/ITransfer.sol)|26|79|Interface for Transfer target contract
+|[src/interfaces/IVault.sol](https://github.com/code-423n4/2022-07-fractional/blob/e2c5a962a94106f9495eb96769d7f60f7d5b14c9/src/interfaces/IVault.sol)|17|65|Interface for Vault proxy contract
+|[src/interfaces/IVaultFactory.sol](https://github.com/code-423n4/2022-07-fractional/blob/e2c5a962a94106f9495eb96769d7f60f7d5b14c9/src/interfaces/IVaultFactory.sol)|11|34|Interface for VaultFactory contract
+|[src/interfaces/IVaultRegistry.sol](https://github.com/code-423n4/2022-07-fractional/blob/e2c5a962a94106f9495eb96769d7f60f7d5b14c9/src/interfaces/IVaultRegistry.sol)|19|92|Interface for VaultRegistry contract
+|[src/modules/Buyout.sol](https://github.com/code-423n4/2022-07-fractional/blob/e2c5a962a94106f9495eb96769d7f60f7d5b14c9/src/modules/Buyout.sol)|293|504|Module contract for vaults to hold buyout pools
+|[src/modules/Migration.sol](https://github.com/code-423n4/2022-07-fractional/blob/e2c5a962a94106f9495eb96769d7f60f7d5b14c9/src/modules/Migration.sol)|305|548|Module contract for vaults to migrate to a new set of permissions
+|[src/modules/Minter.sol](https://github.com/code-423n4/2022-07-fractional/blob/e2c5a962a94106f9495eb96769d7f60f7d5b14c9/src/modules/Minter.sol)|30|62|Module contract for minting a fixed supply of fractions
+|[src/modules/protoforms/BaseVault.sol](https://github.com/code-423n4/2022-07-fractional/blob/e2c5a962a94106f9495eb96769d7f60f7d5b14c9/src/modules/protoforms/BaseVault.sol)|68|138|Protoform contract for vault deployments with a fixed supply and buyout mechanism
+|[src/references/SupplyReference.sol](https://github.com/code-423n4/2022-07-fractional/blob/e2c5a962a94106f9495eb96769d7f60f7d5b14c9/src/references/SupplyReference.sol)|15|32|Reference implementation for the optimized Supply target contract
+|[src/references/TransferReference.sol](https://github.com/code-423n4/2022-07-fractional/blob/e2c5a962a94106f9495eb96769d7f60f7d5b14c9/src/references/TransferReference.sol)|19|70|Reference implementation for the optimized Transfer target contract
+|[src/targets/Supply.sol](https://github.com/code-423n4/2022-07-fractional/blob/e2c5a962a94106f9495eb96769d7f60f7d5b14c9/src/targets/Supply.sol)|114|199|Target contract for minting and burning fractional tokens
+|[src/targets/Transfer.sol](https://github.com/code-423n4/2022-07-fractional/blob/e2c5a962a94106f9495eb96769d7f60f7d5b14c9/src/targets/Transfer.sol)|444|703|Target contract for transferring fungible and non-fungible tokens
+|[src/utils/MerkleBase.sol](https://github.com/code-423n4/2022-07-fractional/blob/e2c5a962a94106f9495eb96769d7f60f7d5b14c9/src/utils/MerkleBase.sol)|101|193|Utility contract for generating merkle roots and verifying proofs
+|[src/utils/Metadata.sol](https://github.com/code-423n4/2022-07-fractional/blob/e2c5a962a94106f9495eb96769d7f60f7d5b14c9/src/utils/Metadata.sol)|19|39|Utility contract for storing metadata of an FERC1155 token
+|[src/utils/Multicall.sol](https://github.com/code-423n4/2022-07-fractional/blob/e2c5a962a94106f9495eb96769d7f60f7d5b14c9/src/utils/Multicall.sol)|26|45|Utility contract that enables calling multiple local methods in a single call
+|[src/utils/SafeSend.sol](https://github.com/code-423n4/2022-07-fractional/blob/e2c5a962a94106f9495eb96769d7f60f7d5b14c9/src/utils/SafeSend.sol)|17|36|Utility contract for sending Ether or WETH value to an address
+|[src/utils/SelfPermit.sol](https://github.com/code-423n4/2022-07-fractional/blob/e2c5a962a94106f9495eb96769d7f60f7d5b14c9/src/utils/SelfPermit.sol)|27|64|Utility contract for executing a permit signature to update the approval status of an FERC1155 token
+|Total:| 2274 | 4730 |
 
-```markdown
-ERC-1155 implementation for Fractional tokens
 
-External Contracts: IFERC1155, INFTReceiver
+#### BaseVault.sol
+*External Contracts*: `IERC20`, `IERC721`, `IERC1155`, `IModule`, `IVaultRegistry`
 
-Libraries: Clone, ERC1155, IFERC1155, INFTReceiver
-```
+#### Buyout.sol
+*External Contracts*: `IERC1155`, `ISupply`, `ITransfer`, `IVault`, `IVaultRegistry`
 
-#### Vault.sol (90 sloc each)
+#### IBaseVault.sol
+*External Contracts*: `IProtoform`
 
-```markdown
-Proxy contract for storing fractionalized assets
+#### IBuyout.sol
+*External Contracts*: `IModule`
 
-External Contracts: MerkleProof
+#### IMinter.sol
+*External Contracts*: `IModule`
 
-Libraries: IVault, NFTReceiver
-```
+#### FERC1155.sol
+*External Contracts*: `IFERC1155`, `INFTReceiver`
 
-#### VaultFactory.sol (55 sloc each)
+*Libraries*: **clones-with-immutable-args/src/Clone.sol**, **@rari-capital/solmate/src/tokens/ERC1155.sol**
 
-```
-Factory contract for deploying fractional vaults
+#### Migration.sol
+*External Contracts*: `IBuyout`, `IERC20`, `IERC721`, `IERC1155`, `IFERC1155`, `IModule`, `IVaultRegistry`
 
-External Contracts: Vault
+*Libraries*: **@rari-capital/solmate/src/utils/ReentrancyGuard.sol**
 
-Libraries: Create2ClonesWithImmutableArgs, IVaultFactory
-```
+#### Minter.sol
+*External Contracts*: `IVault`
 
-#### VaultRegistry.sol (103 sloc each)
+#### SafeSend.sol
+*Libraries*: **@rari-capital/solmate/src/tokens/WETH.sol**
 
-```
-Registry contract for tracking all fractional vaults and deploying token contracts
+#### Supply.sol
+*External Contracts*: `IVaultRegistry`
 
-External Contracts: FERC1155, IVault, VaultFactory
+#### Transfer.sol
+*External Contracts*: `IERC20`, `IERC721`, `IERC1155`
 
-Libraries: ClonesWithImmutableArgs, IVaultRegistry
-```
+#### Vault.sol
+*Libraries*: **@openzeppelin/contracts/utils/cryptography/MerkleProof.sol**
 
-#### Supply.sol (114 sloc)
+#### VaultFactory.sol
+*External Contracts*: `Vault`
 
-```
-Target contract for minting and burning fractional tokens
+*Libraries*: **clones-with-immutable-args/src/Create2ClonesWithImmutableArgs.sol**
 
-External Contracts: IVaultRegistry
+#### VaultRegistry.sol
+*External Contracts*: `FERC1155`, `IVault`, `VaultFactory`
 
-Libraries: ISupply
-```
+*Libraries*: **clones-with-immutable-args/src/ClonesWithImmutableArgs.sol**
 
-#### Transfer.sol (466 sloc)
-
-```
-Target contract for transferring fungible and non-fungible tokens
-
-External Contracts: IERC20, IERC721, IERC1155
-
-Libraries: ITransfer
-```
-
-#### Buyout.sol (324 sloc)
-
-```
-Module contract for vaults to hold buyout pools
-
-External Contracts: IERC1155, ISupply, ITransfer, IVault, IVaultRegistry
-
-Libraries: IBuyout, Multicall, NFTReceiver, SafeSend, SelfPermit
-```
-
-#### Migration.sol (365 sloc)
-
-```
-Module contract for vaults to migrate to a new set of permissions
-
-External Contracts: IBuyout, IERC20, IERC721, IERC1155, IFERC1155, IModule, IVaultRegistry
-
-Libraries: IMigration, MerkleBase, Minter, Multicall, NFTReceiver, ReentrancyGuard
-```
-
-#### Minter.sol (39 sloc)
-
-```
-Module contract for minting a fixed supply of fractions
-
-External Contracts: IVault
-
-Libraries: IMinter, ISupply
-```
-
-#### BaseVault.sol (95 sloc)
-
-```
-Protoform contract for vault deployments with a fixed supply and buyout mechanism
-
-External Contracts: IERC20, IERC721, IERC1155, IModule, IVaultRegistry
-
-Libraries: IBaseVault, MerkleBase, Minter, Multicall
-```
-
-#### Memory.sol (13 sloc)
-
-```
-Global list of constants used for assembly optimizations
-```
-
-#### Permit.sol (9 sloc)
-
-```
-Global list of constants used for EIP-712 permit functionality
-```
-
-#### SupplyReference.sol (15 sloc)
-
-```
-Reference implementation for the optimized Supply target contract
-```
-
-#### TransferReference.sol (40 sloc)
-
-```
-Reference implementation for the optimized Transfer target contract
-```
-
-#### MerkleBase.sol (116 sloc)
-
-```
-Utility contract for generating merkle roots and verifying proofs
-```
-
-#### Metadata.sol (17 sloc)
-
-```
-Utility contract for storing metadata of a FERC1155 token
-```
-
-#### Multicall.sol (28 sloc)
-
-```
-Utility contract that enables calling multiple local methods in a single call
-```
-
-#### SafeSend.sol (18 sloc)
-
-```
-Utility contract for sending Ether or WETH value to an address
-```
-
-#### SelfPermit.sol (40 sloc)
-
-```
-Utility contract for executing a permit signature to update the approval status in an FERC1155 contract
-```
 
 ## Areas of concern for Wardens
 
