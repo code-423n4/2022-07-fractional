@@ -192,19 +192,19 @@ ETHERSCAN_API_KEY=00000000000000000000000000000000000000000000000000000000000000
 
 Slither will fail when you try to run it locally due to issues with top-level constants inside Yul blocks as well as custom reverts being used from interface contracts that are not inherited. If you would still like to run it, the following commands will need to be run to fix those issues:
 
-1. ```
+```
 curl https://gist.githubusercontent.com/mehtaculous/5794ad3a8bcde2c0a52015d546acc741/raw/47210d6c67d273bbb70e558958054d678d43db5b/Supply.sol > src/targets/Supply.sol
 ```
 
-2. ```
+```
 curl https://gist.githubusercontent.com/mehtaculous/642887f238dd55dda6a20cdf9b5a5474/raw/22212bd1848d1316085371d33647f650d307c591/Transfer.sol > src/targets/Transfer.sol
 ```
 
-3. ```
+```
 curl https://gist.githubusercontent.com/mehtaculous/b17776dc0d0c5c93948c10361d37cfe1/raw/892f9ac1894f12c40cf731e047a0a328f2c4d0fa/Metadata.sol > src/utils/Metadata.sol
 ```
 
-4. ```
+```
 curl https://gist.githubusercontent.com/mehtaculous/9c094ce7d652dd7d552a6dc5501c7fef/raw/a418270fe54f61b328fa0be8a27d0dadb09a2567/Migration.sol > src/modules/Migration.sol
 ```
 
