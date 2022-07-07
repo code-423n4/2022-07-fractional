@@ -12,7 +12,9 @@
 
 This contest is open for one week to give wardens time to understand the protocol properly.  Representatives from Fractional will be available in the Code Arena Discord to answer any questions during the contest period. The focus of the contest is to try and find any logic errors, mint/burn fractions unexpectedly, or ways to remove NFTs from the Fractional Vaults in ways that would be beneficial for an attacker at the expense of vault creators or fraction holders. Wardens should assume that governance variables are set sensibly (unless they can find a way to change the value of a governance variable, and not counting social engineering approaches for this).
 
-## Protocol overview
+## Protocol Overview
+
+[![Gitbook](https://img.shields.io/badge/docs-%F0%9F%93%84-blue)](https://docs.fractional.art/fractional-v2-1)
 
 > The Fractional v2 Protocol is designed around the concept of Hyperstructures
 
