@@ -188,6 +188,36 @@ ETHERSCAN_API_KEY=
 
 5. run `make test` - Runs foundry tests
 
+### Slither
+
+Slither will fail when you try to run it locally. If you would still like to run it, the following changes will need to be made (you can also simply copy/paste the source code from the Gists provided below):
+
+1. Replace all the constants inside `src/targets/Supply.sol` with the actual values from `src/constants/Supply.sol` ([Gist](https://gist.github.com/mehtaculous/5794ad3a8bcde2c0a52015d546acc741))
+
+2. Replace all the constants inside `src/targets/Transfer.sol` with the actual values from `src/constants/Transfer.sol` ([Gist](https://gist.github.com/mehtaculous/642887f238dd55dda6a20cdf9b5a5474))
+
+3. Replace `revert IFERC1155.InvalidSender(..)` inside `src/utils/Metadata.sol` with the following code ([Gist](https://gist.github.com/mehtaculous/b17776dc0d0c5c93948c10361d37cfe1)):
+```
+error InvalidSender(address _required, address _provided);
+...
+revert InvalidSender(..)
+```
+
+4. Replace every instance (there should be 5 total) of `revert IBuyout.InvalidState(..)` inside `src/modules/Migration.sol` with the following code ([Gist](https://gist.github.com/mehtaculous/9c094ce7d652dd7d552a6dc5501c7fef)):
+```
+error InvalidState(State _required, State _current);
+...
+revert InvalidState(..)
+...
+revert InvalidState(..)
+...
+revert InvalidState(..)
+...
+revert InvalidState(..)
+...
+revert InvalidState(..)
+```
+
 ## Glossary
 
 | Name                                                                                                     | Description                                                                              |
