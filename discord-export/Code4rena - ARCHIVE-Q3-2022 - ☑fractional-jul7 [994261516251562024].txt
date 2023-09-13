@@ -1,0 +1,1629 @@
+==============================================================
+Guild: Code4rena
+Channel: ARCHIVE-Q3-2022 / ☑fractional-jul7
+==============================================================
+
+[07/06/2022 3:25 PM] itsmetechjay
+👋 Hello and welcome to the contest channel for the $75K USDC **Fractional v2** contest!
+
+📆 Contest opens July 07, 2022 8:00 PM at (20:00 UTC) and runs through July 14, 2022 8:00 PM at (20:00 UTC) (7 days).
+
+Please give a warm welcome to the Fractional team, particularly @snevins and @swaHili , who will be available for questions either here in the channel or via DM.
+
+We'll be posting relevant links, documentation, etc. here, so if you intend to participate in this contest, consider enabling notifications for this channel. 🐺 ⏰
+
+Contest Page: https://code4rena.com/contests/2022-07-fractional-v2-contest
+
+{Embed}
+https://code4rena.com/contests/2022-07-fractional-v2-contest
+Code4rena Fractional v2 contest
+$75,000 USDC
+7 July 2022—14 July 2022
+Code4rena - ARCHIVE-Q3-2022 - ☑fractional-jul7 [994261516251562024].txt_Files/C4-banner-7C19B.png
+
+{Reactions}
+🧩 (13) 👋 (9) 🤞 (5) 🇬 (5) 🇲 (5) 
+
+[07/07/2022 3:53 AM] haruxe
+:FeelsOkayMan: :TeaTime:  welcome @snevins @swaHili
+
+{Reactions}
+👋 (2) 
+
+[07/07/2022 4:05 AM] swaHili#3962
+gm
+
+
+[07/07/2022 10:53 AM] okkothejawa
+hm
+
+{Reactions}
+🙌 (4) 
+
+[07/07/2022 11:12 AM] snevins
+gm!
+
+
+[07/07/2022 12:13 PM] Wayne#7117
+gm
+
+
+[07/07/2022 6:00 PM] ch_301
+sup fam
+
+
+[07/07/2022 6:22 PM] defsec
+hm
+
+{Reactions}
+🙌 
+
+[07/07/2022 7:05 PM] dravee
+hm
+
+{Reactions}
+hi5 (2) 
+
+[07/07/2022 7:38 PM] shandysulen
+~~g~~hm 🙂
+
+
+[07/07/2022 8:08 PM] Franfran#5067
+hm sirs
+
+
+[07/07/2022 8:08 PM] Franfran#5067
+What's this ?
+
+
+[07/07/2022 8:10 PM] Deleted User
+Hey someone want to collab while auditing ? Im new to here just know little bit of solidity. If anyone is interested pls DM me
+
+
+[07/07/2022 8:10 PM] Franfran#5067
+do u have any experience in other languages ?
+
+
+[07/07/2022 8:11 PM] snevins
+hm everyone! I'm excited for this contest to get started and to get everyone's feedback on what we've been working on.  Feel free to ask questions here or to DM either me or @swaHili with anything that comes up
+
+{Reactions}
+🚀 (4) 🙏 (3) 💯 (4) 
+
+[07/07/2022 8:13 PM] Franfran#5067
+An hyperstructure :0
+
+{Reactions}
+catjam (3) 
+
+[07/07/2022 8:23 PM] shandysulen
+I think it's time I ask what hm stands for, I wanna join the club 😅
+
+{Reactions}
+😂 
+
+[07/07/2022 8:24 PM] Franfran#5067
+ahaha, it stands for "high medium" (severity)
+
+{Reactions}
+💯 
+
+[07/07/2022 8:24 PM] shandysulen
+I love it, fixed my greeting :KEK:
+
+{Reactions}
+😂 (5) 
+
+[07/07/2022 8:29 PM] pedr02b2
+sent you a dm as was just about to ask the same question basically
+
+
+[07/08/2022 8:26 AM] Deleted User
+yeah little bit in js
+
+
+[07/08/2022 9:38 AM] scaraven
+Hi, I'm trying to get a general understanding of the protocol. Am I correct in that the `Vault` is responsible for holding the NFT's and that any action is facilitated by an external `Module` contract where each `Module` allows the `Vault` to perform a specific function (buying, selling, etc...)?
+
+{Reactions}
+catjam (2) 
+
+[07/08/2022 11:51 AM] infosec_us_team
+That's correct, as far as I understand the code. Modules are set by the curator upon fractionalization and can be adjusted via governance vote of token holders.
+
+
+[07/08/2022 1:22 PM] 0x1f8b
+Hello! what are the currently implemented plugins? just `NFTReceiver`? @snevins @swaHili
+
+
+[07/08/2022 1:22 PM] merkleplant
+@snevins send you a fren request in order to DM 🙂
+
+
+[07/08/2022 1:30 PM] snevins
+I don’t think you sent it
+
+
+[07/08/2022 1:30 PM] snevins
+Nvm got it 😅
+
+{Reactions}
+🙏 
+
+[07/08/2022 3:15 PM] swaHili#3962
+there currently are no implemented plugins, the `NFTReceiver` is simply used for testing purposes
+
+{Reactions}
+👍 (3) 
+
+[07/08/2022 4:34 PM] 0xkitsune
+Thank you for providing the path for each contract in scope, small detail but is much appreciated!
+
+{Reactions}
+catjam (7) 
+
+[07/08/2022 8:55 PM] izhuer
+Hi, a general question. After someone creates a vault, deposits his NFTs, and gets fraction tokens (ERC1155), how can he trade these fraction tokens?
+
+
+[07/08/2022 8:55 PM] izhuer
+I am curious about the underlying busness model, or is there any ERC1155-compatible Uniswap? 😂
+
+
+[07/08/2022 8:57 PM] Franfran#5067
+I think that it's the purpose of the Buyout contract
+
+
+[07/08/2022 8:59 PM] izhuer
+I guess the Buyout is for someone bidding for the NFTs, but i am a bit curious how these ERC1155 tokens are distributed at the very beginning
+
+
+[07/08/2022 9:07 PM] pedr02b2
+yea im still trying to work out what the first contract to interact with to be honest so i can try out testing some functions
+
+
+[07/08/2022 9:08 PM] pedr02b2
+im really fidning it hard to understan the archetecture of this one
+
+
+[07/08/2022 9:08 PM] Franfran#5067
+They are minted on vault deploying looks like
+
+
+[07/08/2022 9:08 PM] Franfran#5067
+in BaseVault.sol
+
+
+[07/08/2022 9:08 PM] pedr02b2
+yea i thought that so the vault holds all nfts fractional nfts etc
+
+
+[07/08/2022 9:09 PM] pedr02b2
+and then from the vault distrubted out
+
+
+[07/08/2022 9:09 PM] pedr02b2
+is that right
+
+
+[07/08/2022 9:09 PM] pedr02b2
+i think a little more infor ios needed on the project with regards to how everything works together
+
+
+[07/08/2022 9:09 PM] Franfran#5067
+true
+
+
+[07/08/2022 9:10 PM] izhuer
+Yes, all the `totalSupply` will be sent to the one who create the vault, e.g., Alice. But to earn profit, Alice should distribute those ERC1155 into the market.
+
+{Reactions}
+cyberheart 
+
+[07/08/2022 9:10 PM] Franfran#5067
+No I think that the fractions are directly sent to the owner wallet
+
+
+[07/08/2022 9:10 PM] pedr02b2
+as id like to try and create a few functions to see what i can do with regard to breaking the buy out proccess etc but i dont know where to start haha
+
+
+[07/08/2022 9:10 PM] Franfran#5067
+correct as my understanding
+
+
+[07/08/2022 9:10 PM] izhuer
+yes yes
+
+
+[07/08/2022 9:11 PM] pedr02b2
+right right ok thank you so much
+
+
+[07/08/2022 9:11 PM] izhuer
+then my question is, lol, how to distribute. It is more like a question about the business model which is not explicitly written in the contract.
+
+
+[07/08/2022 9:11 PM] pedr02b2
+yea 100%
+
+
+[07/08/2022 9:12 PM] izhuer
+just curious, Lol
+
+
+[07/08/2022 9:12 PM] pedr02b2
+but have to say im happy that i managed to work that out hahaha
+
+
+[07/08/2022 9:12 PM] Franfran#5067
+Isn't the Buyout contract a valid answer, sir ?
+
+
+[07/08/2022 9:13 PM] snevins
+Yeah, that's correct, so in this case Alice would choose the market/method to distribute the fractions, which is separate from the fractionalization/reconstitution of the underlying nfts
+
+
+[07/08/2022 9:13 PM] izhuer
+I suspect not? Bob cannot make a buyout, if he does not hold any ERC1155 tokens
+
+
+[07/08/2022 9:13 PM] izhuer
+before starting a buyout, Bob needs to get some ERC1155 tokens from Alice?
+
+
+[07/08/2022 9:14 PM] izhuer
+otherwise, it becomes a simple game where Alice holds all ERC1155 tokens
+
+
+[07/08/2022 9:14 PM] Franfran#5067
+Well yeah, Alice should put those tokens as an auction in the Buyout contract in order to distribute them isn't it ?
+
+
+[07/08/2022 9:14 PM] Franfran#5067
+Why not ?
+
+
+[07/08/2022 9:14 PM] izhuer
+i see your point
+
+
+[07/08/2022 9:15 PM] izhuer
+make sense
+
+
+[07/08/2022 9:15 PM] pedr02b2
+just reading th buy out while reading this seeing the pattern i thnk
+
+
+[07/08/2022 9:15 PM] izhuer
+Yes yes, it is my original understanding
+
+{Reactions}
+💯 
+
+[07/08/2022 9:16 PM] Franfran#5067
+Nice hacking sirs then 🥸
+
+
+[07/08/2022 9:17 PM] izhuer
+do you have any example of how Alice choose market/method to distribute the fractions. I know it is out of the auditing scope, just wanna know how to distribute ERC1155 into the market 😂
+
+
+[07/08/2022 9:17 PM] izhuer
+please bear me if I bother a lot 😂, this question is not related to auditing tbh @snevins
+
+
+[07/08/2022 9:18 PM] pedr02b2
+no no your right cos i can see how you withdraw and NFT and batch withdraws but i dont see how you distribute them either
+
+
+[07/08/2022 9:18 PM] pedr02b2
+just how you withdraw them
+
+
+[07/08/2022 9:18 PM] pedr02b2
+create them create fractionals etc etc
+
+
+[07/08/2022 9:19 PM] pedr02b2
+permissions for the vault to make sure you can withdraw them etc i see all this
+
+
+[07/08/2022 9:21 PM] izhuer
+i think distributing fractions is not in the scope of their contracts, like Alice can directly transfer some fractions to Bob
+
+
+[07/08/2022 9:21 PM] pedr02b2
+yea i see the buy out is half or all of them
+
+
+[07/08/2022 9:21 PM] pedr02b2
+alice to bob
+
+
+[07/08/2022 9:22 PM] izhuer
+i am not sure whether buy out is designed for distributing fractions, tbh
+
+
+[07/08/2022 9:22 PM] pedr02b2
+na i mean you cant distribute fractions if you can only buy half or all of the supp[ly thats right
+
+
+[07/08/2022 9:22 PM] pedr02b2
+to distribute fractions you would need to able to distrubte one or all
+
+
+[07/08/2022 9:23 PM] Franfran#5067
+I don't think so, you can use `buyFractions` to buy an amount of fractions
+
+
+[07/08/2022 9:23 PM] snevins
+Yeah no worries, there are a lot of options to sell 1155s. opensea listings, sudoswap, 0x, or an auction mechanism on a custom contract for example
+
+
+[07/08/2022 9:23 PM] pedr02b2
+looking now
+
+
+[07/08/2022 9:24 PM] izhuer
+Lol, that is what I wanted! thanks a lot !!!
+
+{Reactions}
+catjam 
+
+[07/08/2022 9:24 PM] izhuer
+but to do so, assuming Alice want a price of P, she needs to put X tokens and (`TotalSupply` - X) * P ETH into the pool
+
+
+[07/08/2022 9:25 PM] pedr02b2
+@notice Buys fractional tokens in exchange for ether from a pool
+
+
+[07/08/2022 9:25 PM] izhuer
+it seems costy, which is not a good business model for users.
+
+
+[07/08/2022 9:25 PM] pedr02b2
+this right her eyou mean
+
+
+[07/08/2022 9:25 PM] Franfran#5067
+Why is that costy ?
+
+
+[07/08/2022 9:26 PM] Franfran#5067
+I see that as uniswap pairs where you have to put equal value of each tokens to balance the pairs
+
+
+[07/08/2022 9:26 PM] izhuer
+(TotalSupply - X) * P  would be a huge amount i think
+
+
+[07/08/2022 9:26 PM] izhuer
+yes yes, but Alice can put X tokens and X * P ETH
+
+
+[07/08/2022 9:26 PM] Franfran#5067
+Yes
+
+
+[07/08/2022 9:26 PM] izhuer
+instead of (TotalSupply - X) * P ETH
+
+
+[07/08/2022 9:27 PM] Franfran#5067
+yes I can't wrap my head around the calculation
+
+
+[07/08/2022 9:27 PM] pedr02b2
+was literally about to write that
+
+{Reactions}
+🤣 
+
+[07/08/2022 9:27 PM] pedr02b2
+i thought i was good at this hahahaa
+
+
+[07/08/2022 9:27 PM] Franfran#5067
+we're 3 lost guys
+
+
+[07/08/2022 9:27 PM] Franfran#5067
+we better drink beers
+
+
+[07/08/2022 9:27 PM] pedr02b2
+these project have a way of making you feel really silly sometimes haha
+
+
+[07/08/2022 9:28 PM] izhuer
+lol, nvm, I think the sponsor gives us a perfect answer
+
+
+[07/08/2022 9:31 PM] Franfran#5067
+Btw, how is the buyout successful is more than 50% is still in the contract ?
+
+
+[07/08/2022 9:37 PM] snevins
+Yup that's correct!
+
+
+[07/08/2022 9:37 PM] Franfran#5067
+Yes but I would say that the buyout is successful if a lot of NFTs have been sold
+
+
+[07/08/2022 9:37 PM] Franfran#5067
+and it seems like it's not the case here
+
+
+[07/08/2022 9:38 PM] snevins
+The buyout is separate from the initial distribution of the fractions
+
+
+[07/08/2022 9:43 PM] pedr02b2
+is ok i think i might finally have it haha i need to write some code and have a play around with some functions i think to get a better understanding
+
+
+[07/08/2022 9:44 PM] pedr02b2
+this is a tough one to get the archetacture of though it has to be said 2 days so far trying to wrap my head around buy and distribute im glad i popped in now
+
+{Reactions}
+😅 
+
+[07/08/2022 9:44 PM] pedr02b2
+thanks guys for what its worth
+
+
+[07/08/2022 9:45 PM] pedr02b2
+or more a night and a day
+
+
+[07/08/2022 9:47 PM] snevins
+feel free to pop back in here or dm for anything that isn't clear 🙂
+
+{Reactions}
+cyberheart 
+
+[07/08/2022 9:49 PM] pedr02b2
+thank you will do i need to get some fresh air haha then write some code all ive done is read today need to get those coding reflexes going
+
+{Reactions}
+💪 (2) 
+
+[07/09/2022 7:41 AM] ak19966
+hi @snevins
+
+
+[07/09/2022 7:41 AM] ak19966
+can I DM you ?
+
+
+[07/09/2022 10:08 AM] lovethewired
+Trying to understand modules a bit better. I see modules and plugins are similar, however they are validated for delegatecall execution in the vault proxy a bit differently. Plugins don't have any state. And modules seem to make the basis for vaults? (not sure on this one). 
+Can a vault have multiple modules? (though wouldn't storage collisions have to be accounted for?)
+
+
+[07/09/2022 12:21 PM] 100proof
+Targets and plugins are the things that are similar. And they should both be stateless to avoid delegatecall storage collisions
+
+{Reactions}
+catjam 
+
+[07/09/2022 12:22 PM] snevins
+Yup!
+
+
+[07/09/2022 12:26 PM] 100proof
+Don't get fooled by `address immutable registry` in Suppy.sol. This is fine because `immutable` is compiled away by Solidity
+
+{Reactions}
+discodog (2) 
+
+[07/09/2022 12:54 PM] tofunmi
+Anybody else having problems with the deleted test files
+
+
+[07/09/2022 12:58 PM] tofunmi
+Writing poc would be a little bit difficult
+
+
+[07/09/2022 12:59 PM] 100proof
+I don't know there were deleted test files. How did you find out this was the case?
+
+
+[07/09/2022 12:59 PM] tofunmi
+Can't rewrite all those files from scratch, even if I could
+
+
+[07/09/2022 1:00 PM] tofunmi
+Ending with bs.sol
+
+
+[07/09/2022 1:01 PM] pedr02b2
+blacksmith tests
+
+
+[07/09/2022 1:01 PM] pedr02b2
+im just trying to work with them now...you mean as in Vault.bs.sol etc
+
+
+[07/09/2022 1:01 PM] pedr02b2
+or more basevault.bs.sol
+
+
+[07/09/2022 1:02 PM] tofunmi
+Yh
+
+
+[07/09/2022 1:02 PM] pedr02b2
+just redown load them with blacksmith although im yet to actually work out hwo to use the damn things
+
+
+[07/09/2022 1:03 PM] pedr02b2
+curl -O https://raw.githubusercontent.com/pbshgthm/blacksmith/main/blacksmith.js
+node blacksmith.js create #in foundry project's root directory
+
+
+[07/09/2022 1:03 PM] pedr02b2
+try this
+
+
+[07/09/2022 1:04 PM] tofunmi
+Wow,  Cool
+
+
+[07/09/2022 1:04 PM] pedr02b2
+ok yea did that sort it for you
+
+
+[07/09/2022 1:05 PM] tofunmi
+If it doesn't,  i would Just write tests from scratch
+
+
+[07/09/2022 1:05 PM] pedr02b2
+it should pyut a blacksmith folder in your test folder
+
+
+[07/09/2022 1:06 PM] pedr02b2
+ive never worked with it before this is jyst what ive learnt over the last 2 days
+
+
+[07/09/2022 1:07 PM] pedr02b2
+im now trying to work out how to use them but there doesnt seem to be much info on blacksmith out there im more used to echidna and slither
+
+
+[07/09/2022 1:09 PM] pedr02b2
+it should leave you with 20 or 30 test contratcs ion the blacksmith folder as appose to the 5 or 10 thats in there in the OG repository
+
+
+[07/09/2022 1:10 PM] tofunmi
+Yh , not much info
+
+
+[07/09/2022 1:11 PM] tofunmi
+Is blacksmith integrated with foundry
+
+
+[07/09/2022 1:12 PM] pedr02b2
+i dont actaully know and im not 100% sure how exactly it works atym the only information that appears to be online is how to generate user contracts and thats it, no use case senarios, now how to use these contracts for testing etc nothing lol
+
+
+[07/09/2022 1:13 PM] pedr02b2
+but it did create for me infact 45 user contracts including mocks so im pretty thus far haha
+
+
+[07/09/2022 1:14 PM] pedr02b2
+impressed*
+
+
+[07/09/2022 1:18 PM] tofunmi
+Guess i would just delete the mocks before running it
+
+
+[07/09/2022 1:19 PM] pedr02b2
+yea what im going to do i think is send the out put to a text file and runa  few senarios with and with out and see if the out put differrs in some way
+
+
+[07/09/2022 1:20 PM] tofunmi
+It's very cool though
+
+
+[07/09/2022 1:20 PM] pedr02b2
+simple >> should do the trick and a few hundreds lines to read im sure hahaha
+
+
+[07/09/2022 1:23 PM] 100proof
+Did you run `make users`?
+
+
+[07/09/2022 1:23 PM] tofunmi
+Yh, not that much though,  but tricky
+
+
+[07/09/2022 1:23 PM] 100proof
+That seems to generate the .bs.sol files
+
+{Reactions}
+cyberheart thankyou 
+
+[07/09/2022 1:23 PM] tofunmi
+Yh
+
+
+[07/09/2022 1:24 PM] pedr02b2
+ah oh now then i didnt i simply ran the blacksmith code but only because i already knew of black smith but still trying to get it work
+
+
+[07/09/2022 1:25 PM] pedr02b2
+you are a legend it finally ran the bs.sol file thank you so much hahaha
+
+
+[07/09/2022 1:27 PM] pedr02b2
+now to get uit run the other blacksmith files not just the basevault.bs.sol
+
+
+[07/09/2022 1:27 PM] 100proof
+Yeah, that could have been explained better in the docs. I just noticed by accident that `make users` generated them.
+
+
+[07/09/2022 1:28 PM] pedr02b2
+ah hang on it ran a normal test file from the blacksmith file but not any of the blacksmith test .sol files
+
+
+[07/09/2022 1:28 PM] pedr02b2
+aahhhh
+
+
+[07/09/2022 1:28 PM] 100proof
+I have all tests running fine on my machine so it is possible!
+
+
+[07/09/2022 1:28 PM] pedr02b2
+sorry from the blacksmith test folder
+
+
+[07/09/2022 1:28 PM] pedr02b2
+i have all the .t.sol running fine
+
+
+[07/09/2022 1:28 PM] pedr02b2
+but not any of the bs.sol
+
+
+[07/09/2022 1:29 PM] 100proof
+What command are you using to run tests?
+
+
+[07/09/2022 1:29 PM] pedr02b2
+forge test because thuse far ivew not found any command line commands for blacksmith
+
+
+[07/09/2022 1:29 PM] pedr02b2
+what did i miss
+
+
+[07/09/2022 1:29 PM] 100proof
+I'm just running `forge test`
+
+
+[07/09/2022 1:29 PM] 100proof
+I think that's it
+
+
+[07/09/2022 1:30 PM] pedr02b2
+and you have .bs.sol tests not just the .t.sol test
+
+
+[07/09/2022 1:30 PM] 100proof
+I think the BS files are just used as imports in `TestUtils.sol`
+
+
+[07/09/2022 1:30 PM] 100proof
+I don't think they get run
+
+
+[07/09/2022 1:31 PM] 100proof
+They're just helper files
+
+{Reactions}
+💯 
+
+[07/09/2022 1:31 PM] 100proof
+I think
+
+
+[07/09/2022 1:32 PM] pedr02b2
+ive no idea there is no documentation anywhere about it accept how to install and the one case study they show on the github repo haha got to be the most poorly explained plugin ever hahaha
+
+
+[07/09/2022 1:33 PM] 100proof
+If you run `forge test` and everything comes back green then you've got the tests working.
+
+
+[07/09/2022 1:33 PM] 100proof
+I've got it going on my machine
+
+
+[07/09/2022 1:33 PM] pedr02b2
+perfect thanks that exactly what i have
+
+
+[07/09/2022 1:33 PM] 100proof
+You're done then
+
+
+[07/09/2022 1:33 PM] pedr02b2
+and 201 lines of output on my text file to read and see what might be breakable lol
+
+
+[07/09/2022 1:34 PM] 100proof
+That's the spirit.
+
+
+[07/09/2022 1:34 PM] pedr02b2
+thanks for the help 🙂
+
+{Reactions}
+🔥 
+
+[07/09/2022 1:35 PM] tofunmi
+Yh
+
+
+[07/09/2022 1:35 PM] tofunmi
+I didn't check the make file,  first things first
+
+
+[07/09/2022 2:21 PM] snevins
+yeah feel free!
+
+
+[07/09/2022 2:47 PM] illilli000
+make sure you always read the readme in full before trying to build manually - the sponsors provided the commands necessary to build everything and run the tests in a fresh environment, near the end of the file
+
+{Reactions}
+👍 (4) 👆 (5) 
+
+[07/09/2022 4:29 PM] swaHili#3962
+there is a glossary at the bottom of the README that links to all the tools and libraries used throughout the repo. you will find a link to the Blacksmith github repo which explains how to use it. but in short, it’s used simply for testing purposes to generate user proxies
+
+{Reactions}
+cyberheart thankyou 
+
+[07/09/2022 4:40 PM] pedr02b2
+yep 100% aware of that thanks and quitew frankly the write up for blacksmith is terrible as it had more than one of us scratching our heads  but thanks for the reply in any case
+
+{Reactions}
+👍 
+
+[07/09/2022 7:35 PM] infosec_us_team
+Hello @swaHili I just sent you a private message ❤️
+
+{Reactions}
+👍 
+
+[07/10/2022 10:29 AM] 0xa5df
+if gas reports don't work for you - just change this in `foundry.toml`
+
+```
+--- a/foundry.toml
++++ b/foundry.toml
+@@ -11,17 +11,17 @@ cache_path = 'cache'
+ force = false
+ evm_version = 'london'
+ gas_reports = [
+-    "BaseVault",
+-    "Buyout",
+-    "FERC1155",
+-    "Migration",
+-    "Supply",
+-    "Target",
+-    "Transfer",
+-    "TransferReference",
+-    "Vault",
+-    "VaultFactory",
+-    "VaultRegistry"
++    "src/FERC1155.sol:FERC1155",
++    "src/Vault.sol:Vault",
++    "src/VaultFactory.sol:VaultFactory",
++    "src/VaultRegistry.sol:VaultRegistry",
++    "src/modules/Buyout.sol:Buyout",
++    "src/modules/Migration.sol:Migration",
++    "src/modules/protoforms/BaseVault.sol:BaseVault",
++    "src/references/TransferReference.sol:TransferReference",
++    "src/targets/Supply.sol:Supply",
++    "src/targets/Transfer.sol:Transfer",
++    "src/utils/Metadata.sol:Metadata"
+ ]
+ ## Sets the concrete solc version to use, this overrides the `auto_detect_solc` value
+ # solc_version = '0.8.10'
+```
+
+
+[07/10/2022 10:35 AM] illilli000
+how does it change the output? I still don't get the table at the end with those changes
+
+
+[07/10/2022 10:37 AM] 0xa5df
+What command do you run? I ran `make report` or `forge test --gas-report -vvv --optimize` from the project-root and it does shows the full table after the change
+
+
+[07/10/2022 10:39 AM] illilli000
+oh ok, I ran `REPORT_GAS=true make test` - I'll try the commands you listed
+
+
+[07/10/2022 10:41 AM] illilli000
+confirmed that the old version doesn't output the table with `make report`, and the new version you've shown does- thanks!
+
+
+[07/10/2022 10:53 AM] 0xa5df
+You're welcome 🙂
+
+
+[07/10/2022 11:13 AM] tofunmi
+Pls the github link box is complaining about adding the lines, even after adding it
+
+
+[07/10/2022 11:18 AM] illilli000
+
+
+{Attachments}
+Code4rena - ARCHIVE-Q3-2022 - ☑fractional-jul7 [994261516251562024].txt_Files/foundry-0B9FE.toml
+
+
+[07/10/2022 12:28 PM] 8olidity#8520
+Modify the blacksmith.js file,  can run forge on windows
+
+{Attachments}
+Code4rena - ARCHIVE-Q3-2022 - ☑fractional-jul7 [994261516251562024].txt_Files/unknown-7F697.png
+
+
+[07/10/2022 12:45 PM] garrett85
+Hi, when i run "make users" I get an error saying "couldn't read cache", have you had this? not sure what i'm missing
+
+
+[07/10/2022 12:50 PM] illilli000
+you're missing the commands that came before it (was able to reproduce) - check the bottom of the readme for the full list, and execute them in the order provided
+
+
+[07/10/2022 12:54 PM] illilli000
+Can you describe the modifications that were required?
+
+
+[07/10/2022 1:04 PM] 8olidity#8520
+
+
+{Attachments}
+Code4rena - ARCHIVE-Q3-2022 - ☑fractional-jul7 [994261516251562024].txt_Files/message-B45F6.txt
+
+{Reactions}
+❤️ (2) 
+
+[07/10/2022 1:06 PM] illilli000
+flipping the file separators, and prefixing commands with `powershell.exe`, thanks!
+
+
+[07/10/2022 4:18 PM] tofunmi
+You have to run forge install first 
+Delete the folder and re clone and run forge install
+
+
+[07/10/2022 6:30 PM] illilli000
+The instructions in the readme say to use `make deps`, create `.env` with the right contents, and run `npm ci` before doing `make users`. It's important that all steps from the readme be followed so that we don't waste the sponsor's time flagging non-issues
+
+{Reactions}
+💯 (5) 
+
+[07/10/2022 9:24 PM] minh___
+works perfectly, well done and thank you for sharing! 🙏
+
+
+[07/11/2022 3:04 PM] dmitriia
+@snevins dm please
+
+
+[07/11/2022 3:07 PM] snevins
+sent you a friend request
+
+{Reactions}
+thankyou 
+
+[07/11/2022 3:08 PM] MEP#2577
+DM'd you aswell if you have time
+
+{Reactions}
+catjam 
+
+[07/11/2022 4:27 PM] panprog
+@snevins sent you friend request, want to dm
+
+
+[07/11/2022 4:27 PM] snevins
+Yeah feel free!
+
+
+[07/11/2022 5:49 PM] zzzitron
+@snevins hi have a question. friend requested
+
+
+[07/11/2022 5:50 PM] snevins
+accepted 🙏
+
+
+[07/11/2022 8:57 PM] rotcivegaf
+@snevins DM
+
+{Reactions}
+👍 
+
+[07/12/2022 4:34 AM] trumpero
+@snevins Hi I have a question. Friend requested
+
+
+[07/12/2022 4:38 AM] swaHili#3962
+I can help you out as well, feel free to DM
+
+
+[07/12/2022 11:10 AM] Franfran#5067
+Anybody found some hm on this one ?
+
+
+[07/12/2022 11:11 AM] illilli000
+not supposed to discuss non-public findings, so only the sponsor can answer this, if they so choose
+
+
+[07/12/2022 11:12 AM] Franfran#5067
+Sorry sir, so some findings will never revealed ?
+
+
+[07/12/2022 11:12 AM] Franfran#5067
+I wanna learn ser
+
+
+[07/12/2022 11:12 AM] illilli000
+when the final report is published, they'll be revealed
+
+
+[07/12/2022 11:12 AM] Franfran#5067
+Oh yeah it's already in production
+
+
+[07/12/2022 11:12 AM] Franfran#5067
+Makes sense
+
+
+[07/12/2022 11:13 AM] Franfran#5067
+Shit
+
+
+[07/12/2022 11:13 AM] Franfran#5067
+I thought that I was in juicebox channel
+
+{Reactions}
+😅 (9) 
+
+[07/12/2022 11:13 AM] Franfran#5067
+Daaaaaaaaamn
+
+
+[07/12/2022 5:11 PM] CRYP70#8985
+Do reports support markdown?
+
+
+[07/12/2022 5:16 PM] acegawd
+DM @snevins  or @swaHili
+
+{Reactions}
+👍 (2) 
+
+[07/12/2022 5:31 PM] alextheentreprenerd
+Yes, you can use `preview` to check how it will see when sent
+
+{Reactions}
+🙏 
+
+[07/12/2022 9:24 PM] 100proof
+I think it's fair to say that It's extremely rare that no Mediums/Highs are found
+
+{Reactions}
+💯 (8) 
+
+[07/13/2022 9:09 PM] 100proof
+~~Fractional has been extended by a day?~~ nope, was always this long
+
+
+[07/13/2022 9:18 PM] minh___
+no you are just trippin I think 😄
+ends tomorrow as its supposed to be: https://discord.com/channels/810916927919620096/994261516251562024/994262926531756194
+
+
+[07/13/2022 9:19 PM] minh___
+unless you got insider info that is
+
+
+[07/13/2022 9:28 PM] 100proof
+I'm just tripping I think. 🙂
+
+{Reactions}
+😂 
+
+[07/13/2022 9:32 PM] scaraven
+hes hiding something for sure👀
+
+
+[07/13/2022 9:36 PM] kartoonjoy
+You all are absolutely hilarious!
+
+
+[07/13/2022 9:39 PM] 100proof
+For the record, just so there's no misunderstanding, I just got confused about the end date.
+
+{Reactions}
+👍 😆 
+
+[07/14/2022 10:00 AM] m4rio.eth
+friend request sent
+
+{Reactions}
+👍 (2) 
+
+[07/14/2022 10:01 AM] m4rio.eth
+for some questions
+
+
+[07/14/2022 1:09 PM] _tutturu_
+@snevins friend request sent
+
+{Reactions}
+catjam 
+
+[07/14/2022 4:51 PM] masterchief#9196
+also sent @snevins or @swaHili thanks!
+
+{Reactions}
+👍 
+
+[07/14/2022 8:02 PM] C4
+**🚨 CONTEST ALERT**
+
+@🐺wardens The **Fractional v2 **contest is now closed! Huge thanks to everyone who participated 🔍, whether you submitted a finding or not.
+
+What's next: the Fractional team will review the findings over the next couple of days, and then we'll pass them off to the judge. Keep an eye on #📢announcements for regular updates on how the contest is progressing through awarding 🤑🏆, judging 🧑‍⚖️ and reporting 📜. Feel free to ping a gardener if you have questions along the way!
+
+{Reactions}
+🔥 (19) 
+
+[07/21/2022 2:07 AM] elku.cryptos
+Did this contest move to judging yet from sponsor review?
+
+
+[07/21/2022 8:55 AM] itsmetechjay
+The sponsors are working through sponsor review.
+
+{Reactions}
+thankyou (8) 
+
+[07/29/2022 2:03 AM] ak19966
+Hi.. any update on this
+
+
+[07/29/2022 3:09 AM] liveactionllamac4
+The sponsor has finished their review and this is currently in judging. 🙂
+
+{Reactions}
+😍 (11) hi5 (7) 👍 (8) 
+
+[07/30/2022 5:51 AM] Franfran#5067
+Wen moon sir ?
+
+
+[07/30/2022 6:27 AM] tofunmi
+Lmao 😂 😂
+
+
+[08/12/2022 2:28 PM] bradmoon
+Anything news？
+
+
+[08/12/2022 2:28 PM] itsmetechjay
+It's currently being judged.
+
+{Reactions}
+👍 (4) 🥺 (2) 
+
+[08/15/2022 10:41 PM] tofunmi
+Any news
+
+
+[08/16/2022 1:01 PM] itsmetechjay
+It's still in judging. No ETA just yet.
+
+{Reactions}
+🥺 
+
+[08/16/2022 8:15 PM] cloudellie
+The judge is working hard on this one but it's a big lift. Lots of findings and some complexity for them to sift through. Sorry for the time lag here.
+
+{Reactions}
+👍 (12) thankyou (9) ❤️ (4) 👀 
+
+[08/27/2022 8:12 PM] treasureseeker
+Hey, do we have an ETA on Fractional? Perfectly fine if not, just curious 🙂
+
+{Reactions}
+👍 
+
+[08/28/2022 4:05 AM] bradmoon
+Maybe they should hire some people...
+
+{Reactions}
+👍 (2) 
+
+[08/29/2022 1:37 PM] itsmetechjay
+We are finalizing the QA for the judging process. If all goes well, we should be announcing awards later this week.
+
+{Reactions}
+🎉 (6) thankyou (6) 
+
+[08/29/2022 2:24 PM] elku.cryptos
+the difficulty level for judging was so high that the judge will probably end up changing his discord name after this. 😂
+
+{Reactions}
+😆 (2) 
+
+[09/01/2022 1:36 PM] elku.cryptos
+hi.  "QA for the judging process" means judge is judging the QA reports or does it mean there is some QA done by  C4 on judge's judging?
+
+
+[09/01/2022 1:38 PM] itsmetechjay
+The sponsor QAs the judging.
+
+{Reactions}
+👍 (2) 
+
+[09/06/2022 10:51 PM] Saintcode_#8823
+Hi, when are awards going to be anounced?
+
+
+[09/07/2022 1:24 AM] itsmetechjay
+Our goal is to get those announced this week.
+
+
+[09/07/2022 8:21 AM] codingnamekiki
+https://github.com/code-423n4/code423n4.com/pull/3796/commits/e1c49f36fece8fb6a5fd161d3c8dc5427544c4d5
+
+
+[09/07/2022 8:21 AM] codingnamekiki
+fractional awards
+
+
+[09/07/2022 8:24 AM] anonnp
+$1 for a medium finding now 😄
+
+{Reactions}
+🤣 (4) 
+
+[09/07/2022 8:42 AM] 0xsorrynotsorry
+C4 is building an auditor army for sure. What a collective consciousness!
+
+
+[09/07/2022 8:51 AM] anonnp
+Laying the ground for best practices ✅
+
+{Reactions}
+💯 (2) 
+
+[09/07/2022 9:50 AM] ak19966
+There is no doubt in it
+
+{Reactions}
+💪 
+
+[09/07/2022 12:51 PM] Saintcode_#8823
+Seems like almost everyone got the same amount for gas optimizations
+
+
+[09/07/2022 1:05 PM] rohan16
+Approx it same for all contests
+
+
+[09/07/2022 1:09 PM] Saintcode_#8823
+So what's the difference between reporting one issue and a lot then?
+
+
+[09/07/2022 1:12 PM] codingnamekiki
+The difference is that the best structured and gas saving optimizations earn most of the prize pool.
+
+
+[09/07/2022 1:18 PM] ak19966
+If so.. do you say like gas is more priority than bugs.. !!!! I am surprised with this secnario...
+
+
+[09/07/2022 1:20 PM] codingnamekiki
+l think it was obvious that l was talking about the 5% gas prize pool not the whole prize pool >.>
+
+
+[09/07/2022 1:20 PM] ak19966
+Even then.. how come this be justified
+
+
+[09/07/2022 1:21 PM] Saintcode_#8823
+So this means everyone got around the same score here?
+
+
+[09/07/2022 1:21 PM] Saintcode_#8823
+cause everyone got around 37 usd
+
+
+[09/07/2022 1:22 PM] codingnamekiki
+My bad just saw that, how everyone has 37 usd
+
+
+[09/07/2022 1:22 PM] codingnamekiki
+https://tenor.com/view/dk-nintendo-donkey-kong-gif-23203423
+
+{Embed}
+https://tenor.com/view/dk-nintendo-donkey-kong-gif-23203423
+Code4rena - ARCHIVE-Q3-2022 - ☑fractional-jul7 [994261516251562024].txt_Files/dk-nintendo-1331B.png
+
+
+[09/07/2022 1:22 PM] Saintcode_#8823
+thats what im talking about
+
+
+[09/07/2022 1:22 PM] Saintcode_#8823
+ahahah
+
+
+[09/07/2022 1:28 PM] ak19966
+If past contests resurfaced again.. definitely they would get more bugs than what was found during that time
+. I think..
+
+
+[09/07/2022 1:30 PM] Saintcode_#8823
+Btw do you know how to see the commit of your report?
+
+
+[09/07/2022 1:30 PM] Saintcode_#8823
+on github
+
+
+[09/07/2022 2:03 PM] Saintcode_#8823
+Nice
+
+
+[09/07/2022 2:33 PM] exd0tpy
+I got my first HIGH but only $117 😂
+
+{Reactions}
+empathy (2) 
+
+[09/07/2022 2:34 PM] minh___
+same, but got 330$ for it :p
+
+{Reactions}
+👍 (2) 
+
+[09/07/2022 2:40 PM] Saintcode_#8823
+Hows this possible?
+
+
+[09/07/2022 2:44 PM]   #9970
+cursed contest
+
+
+[09/07/2022 2:45 PM] Saintcode_#8823
+☠️
+
+
+[09/07/2022 3:02 PM] codingnamekiki
+First time seeing this
+
+
+[09/07/2022 3:02 PM] codingnamekiki
+:thisisfine:
+
+
+[09/07/2022 3:20 PM] itsmetechjay
+🤑 🎉 Awards for** Fractional v2**:
+
+$6,232.64 USDC » @kenzo 
+$5,286.13 USDC » 0x29A (@anon, @Rotcivegaf)
+$4,819.19 USDC » @cccz 
+$4,661.52 USDC » @0x52 
+$4,474.05 USDC » @hansfriese 
+$3,913.01 USDC » @zzzitron 
+$3,225.91 USDC » @Treasure-Seeker 
+$2,538.80 USDC » @TrungOre 
+$2,435.83 USDC » PwnedNoMore (@izhuer, @ItsNio, @papr1ka2)
+$2,299.42 USDC » @scaraven 
+$2,207.05 USDC » @Bernd 
+$2,097.92 USDC » @100proof 
+$1,920.96 USDC » @0xA5DF 
+$1,664.33 USDC » @Roman 
+$1,483.26 USDC » @xiaoming90 
+$1,459.49 USDC » @panprog 
+$1,271.94 USDC » @0xsanson 
+$1,216.92 USDC » @codexploder 
+$1,182.60 USDC » @hyh 
+$1,088.92 USDC » @MEP 
+$939.85 USDC » @unforgiven 
+$875.50 USDC » @0x1f8b 
+$848.66 USDC » @shenwilly 
+$842.47 USDC » @smiling_heretic 
+$585.20 USDC » @IllIllI 
+$581.89 USDC » @ElKu 
+$580.47 USDC » @dipp 
+$575.15 USDC » @infosec_us_team 
+$554.12 USDC » @bin2chen 
+$535.42 USDC » @Critical 
+$452.61 USDC » @thinklab 
+$429.83 USDC » @joestakey 
+$366.09 USDC » @0xNineDec 
+$344.91 USDC » @minhtrng 
+$344.41 USDC » @Django | Saloon Finance 
+$334.91 USDC » @242 
+$334.61 USDC » @ayeslick 
+$329.66 USDC » @sorryNotsorry 
+$328.95 USDC » @Ruhum 
+$327.79 USDC » @pashov 
+$305.26 USDC » @alpharush 
+$282.85 USDC » @jonatascm 
+$267.71 USDC » 0x (@Czar102, @pmerkleplant)
+$251.14 USDC » @horsefacts 
+$218.46 USDC » @simon135 
+$213.57 USDC » BowTiedWardens (@BowTiedHeron, @BowTiedPickle, @m4rio.eth, @Dravee , @BowTiedFirefox )
+$205.41 USDC » @s3cunDa 
+$201.40 USDC » @0xNazgul
+
+{Reactions}
+🎉 (8) 
+
+[09/07/2022 3:20 PM] itsmetechjay
+$194.14 USDC » @neumo 
+$179.03 USDC » @PENGUN 
+$174.66 USDC » @c3phas 
+$163.93 USDC » @bbrho 
+$158.58 USDC » @minhquanym 
+$143.24 USDC » @ak1 
+$142.29 USDC » @cryptphi 
+$139.45 USDC » @Saintcode_ 
+$132.20 USDC » @Franfran 
+$125.22 USDC » @sashik_eth 
+$114.45 USDC » @kyteg 
+$111.15 USDC » @_Adam 
+$108.61 USDC » @Kaiziron 
+$107.33 USDC » @TomJ 
+$105.13 USDC » @Sm4rty 
+$104.38 USDC » @__141345__ 
+$103.94 USDC » @Deivitto 
+$103.79 USDC » @ReyAdmirado 
+$103.43 USDC » @Kumpa 
+$103.09 USDC » @robee 
+$102.15 USDC » @Funen 
+$101.25 USDC » @Waze 
+$101.04 USDC » @mektigboy 
+$100.96 USDC » @Bnke 
+$100.96 USDC » @JC
+$100.80 USDC » @Tutturu 
+$99.50 USDC » kebabsec (@okkothejawa, @FlameHorizon)
+$99.45 USDC » @rbserver 
+$99.43 USDC » @apostle0x01 
+$99.43 USDC » @Tomio 
+$99.42 USDC » 0xsolstars (@Varun_Verma, @masterchief)
+$99.42 USDC » @8olidity 
+$99.41 USDC » @fatherOfBlocks 
+$99.41 USDC » @benbaessler 
+$99.41 USDC » @Sloth 
+$99.41 USDC » @sach1r0 
+$99.41 USDC » @delfin454000 
+$99.41 USDC » @rokinot 
+$99.41 USDC » @Rohan 
+$99.40 USDC » @durianSausage 
+$99.40 USDC » @pedr02b2 
+$81.30 USDC » @auditor0517 
+$76.58 USDC » @async 
+$76.58 USDC » hubble (ksk2345, @shri4net)
+$73.67 USDC » @hatch 
+$64.32 USDC » @m_Rassska 
+$63.41 USDC » @hake | SmartSek 
+$63.34 USDC » @peritoflores 
+$63.34 USDC » @Amithuddar 
+$63.34 USDC » @Kalpita🤖 
+$62.31 USDC » 0xf15ers (@remora0, @twojoy)
+$61.97 USDC » @aysha 
+$61.96 USDC » @dy 
+$61.94 USDC » Hawkeye (@0xwags, @0xmint)
+$61.94 USDC » @Kulk0 
+$61.94 USDC » @rajatbeladiya 
+$61.94 USDC » @Sahar 
+$61.94 USDC » @David_ 
+$61.94 USDC » @cloudjunky 
+$61.94 USDC » @Viksaa39 
+$61.94 USDC » @svskaushik 
+$61.94 USDC » @Cryptographer_1 
+$61.94 USDC » @z3s 
+$61.94 USDC » @code-cipher 
+$55.16 USDC » @0xKitsune 
+$55.16 USDC » @hrishibhat 
+$43.83 USDC » @slywaters 
+$42.59 USDC » @giovannidisiena 
+$42.43 USDC » @Chom 
+$41.49 USDC » @zhuXKET 
+$39.64 USDC » @gogo 
+$38.90 USDC » @Limbooo 
+$38.86 USDC » Avci (@0xArshia, @0xdanial)
+$38.36 USDC » @0xkatana 
+$38.36 USDC » @ajtra 
+$38.36 USDC » @RedOneN 
+$37.55 USDC » @brgltd 
+$37.49 USDC » @Ignacio 
+$37.47 USDC » @Fitraldys 
+$37.47 USDC » @jocxyen 
+$37.47 USDC » @karanctf 
+$37.47 USDC » @djxploit 
+$37.47 USDC » @dharma09 
+$37.47 USDC » @Noam Yakov 
+$6.36 USDC » @Tofunmi 
+$4.96 USDC » @ACai 
+$4.96 USDC » @BradMoon 
+$4.96 USDC » @nine9 
+$4.96 USDC » @lucyoa 
+$4.96 USDC » @Twpony 
+$4.96 USDC » byterocket (@marvinkruse, @pmerkleplant)
+$1.40 USDC » @bardamu 
+$1.40 USDC » @StyxRave 
+
+🏁 Findings summary
+---------------------------
+High risk findings: 141 total, 20 unique
+Med risk findings: 105 total, 12 unique
+Gas optimization reports: 76
+QA reports: 97
+
+Awards will be distributed on Polygon within the next 1-2 weeks. Congratulations all! 💸 💸 💸
+
+{Reactions}
+👍 😍 
+
+[09/07/2022 3:23 PM] dravee
+97 QA reports, 141 high findings, 105 medium findings 😂
+Now that's some extreme pie split
+
+{Reactions}
+💯 (4) 
+
+[09/07/2022 3:24 PM] scaraven
+Might need to lobby for a warden minimum wage
+
+{Reactions}
+💯 (5) 😂 (5) 
+
+[09/07/2022 3:25 PM] Saintcode_#8823
+I was talking about gas tho
+
+{Reactions}
+😶 😅 
+
+[09/07/2022 3:25 PM] Saintcode_#8823
+but yeah extreme asf
+
+{Reactions}
+💯 
+
+[09/07/2022 3:28 PM] hrishibhat
+"Fractional" indeed 😛
+
+{Reactions}
+😂 (7) 
+
+[09/07/2022 3:28 PM] Saintcode_#8823
+indeed
+
+
+[09/07/2022 3:28 PM] sm4rty_
+Hi, my qa score in this contest got 85+ points. I am already certified+ .. How to apply for backstage role?
+
+{Attachments}
+Code4rena - ARCHIVE-Q3-2022 - ☑fractional-jul7 [994261516251562024].txt_Files/IMG_20220907_205755-5D7EF.jpg
+
+{Reactions}
+🎉 (7) chefskiss (2) hearteyesshark 
+
+[09/07/2022 3:29 PM] itsmetechjay
+Please submit a help desk request and we can get you sorted.
+
+
+[09/07/2022 3:29 PM] sm4rty_
+Thanks
+
+{Reactions}
+👍 
+
+[09/07/2022 3:46 PM] _tutturu_
+Those $1.4 mediums 😂
+
+
+[09/07/2022 3:47 PM] codingnamekiki
+In a good day you can buy 2 gums and half, not bad at all.
+
+{Reactions}
+🤩 (2) 
+
+[09/07/2022 3:50 PM] Ignacio#9604
+why you only get 67 with a 85+?
+
+
+[09/07/2022 3:51 PM] sm4rty_
+maybe because of quality of reports. Not quantity
+
+
+[09/07/2022 8:37 PM] tofunmi
+2 mediums man 😂 😂 😂  6 dols man
+
+
+[09/07/2022 8:38 PM] tofunmi
+Really need to up my game , cause wtf
+
+
+[09/07/2022 8:39 PM] tofunmi
+It all makes sense though,  means you gotta put in work to get bread , economy is bad these days man , no work no pay
+
+
+[09/10/2022 2:25 PM] elku.cryptos
+I also submitted a help request for backstage role.
+
+{Reactions}
+👍 
+
+[09/12/2022 6:50 PM] Saintcode_#8823
+When the rewards going to be sent?
+
+
+[09/12/2022 7:00 PM] itsmetechjay
+We aim to send them between 1-2 weeks after announcement.
+
+
+[09/12/2022 7:56 PM] nine_k
+they were just sent out 🙂
+
+{Reactions}
+hi5 (3) C4Keycap (2) 
+
+[09/13/2022 12:04 AM] codingnamekiki
+Hey were the awards for the mimo contest sent already?
+
+
+[09/13/2022 12:40 AM] rohan16
+Not yet
+
+
+[09/13/2022 12:41 AM] codingnamekiki
+Thanks
+
+
+[09/13/2022 12:42 AM] rohan16
+Mention not
+
+{Reactions}
+👍 
+
+[09/27/2022 12:57 AM] Amithuddar#9571
+I still didn't get payout, i can't see usdc added in my wallet
+
+
+[09/27/2022 1:05 AM] Amithuddar#9571
+Which token i should import in my meta mask to see reward?
+
+
+[09/27/2022 1:22 AM] Amithuddar#9571
+I got it, had to change network to polygon.
+
+{Reactions}
+👍 (2) 
+
+==============================================================
+Exported 312 message(s)
+==============================================================
